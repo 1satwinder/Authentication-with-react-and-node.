@@ -48,6 +48,7 @@ export const signUpRoute = {
         } catch (e){
             console.log(e);
             res.sendStatus(500);
+            console.log("error while sending mail");
         }
         
         jwt.sign({
